@@ -1,0 +1,59 @@
+/* body
+├── #game-screen (相对定位，红色边框)
+│   ├── #background (绝对定位，背景图片，z-index: 1)
+│   └── #character (绝对定位，人物图片，z-index: 2) */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30); /* 设置整个网页的背景为黑色 */
+
+    /* background-color: rgb(119, 184, 212); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 确保网页高度覆盖整个视窗高度 */
+}
+
+ 
+#money {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}
+ 
+/* 其他样式... */
+
+
+#save-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}

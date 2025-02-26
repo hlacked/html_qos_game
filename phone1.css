@@ -1,0 +1,211 @@
+
+
+/* phone.css文件 */
+
+
+/* 手机整体样式 */
+#phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(300px); /* 初始状态只露出一截 */
+}
+
+/* 手机顶部标题 */
+#phone::before {
+    content: "手机";
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+/* 手机功能文本的样式 */
+#phone span {
+    font-size: 14px;
+    color: lightgray;
+}
+
+/* 手机按钮样式 */
+.phone-button {
+    width: 80px;
+    height: 30px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.phone-button:hover {
+    background-color: #00cc00;
+}
+
+.phone-button:active {
+    background-color: #009900;
+}
+
+.phone-button.highlighted {
+    background-color: #00cc00;
+    border: 2px solid red;
+}
+
+
+
+
+/* 手机展开状态 */
+#phone.open {
+    transform: translateY(0); /* 完全展开 */
+}
+
+
+
+/* 信息界面样式 */
+/* #info-screen {
+    display: none;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+
+} */
+ 
+/* 信息界面标题 */
+/* #info-screen h2 {
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+} */
+ 
+/* 信息界面文本 */
+/* #info-screen p {
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.5;
+} */
+ 
+/* 信息界面返回按钮 */
+/* #info-screen .button {
+    width: 80px;
+    height: 30px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+ 
+#info-screen .button:hover {
+    background-color: #00cc00;
+}
+ 
+#info-screen .button:active {
+    background-color: #009900;
+}
+ */
+
+
+
+ /* 新增界面层级样式 */
+.phone-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    display: none;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.phone-screen.active {
+    display: flex;
+}
+
+.sub-screen {
+    background: #444;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sub-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.chat-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.back-button.highlighted {
+    background: none;
+    /* border: none; */
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid red;
+
+}
+
+.chat-button.highlighted {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 2px solid red;
+}

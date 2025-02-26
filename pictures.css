@@ -1,0 +1,69 @@
+
+/* picture.css用于定义背景图片和人物图片样式的文件 */
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直居中 */
+}
+
+#game-screen {
+    position: relative;
+    /* width: 400px;
+    height: 300px; */
+
+    width: 90%;
+    height: 90%;
+
+
+    background-color: white; /* 设置黑色背景 */
+    /* border: 10px solid rgb(167, 233, 244); */
+    border: 10px solid rgb(101, 101, 101);
+
+    border-radius: 10px; /* 添加圆角 */
+
+    /* 定位设置 */
+    margin: 0 auto; /* 水平居中 */
+    /* margin-right: 2%; */
+    margin-top: 2%;
+
+
+    box-shadow: inset 0 0 0 10px rgba(101, 101, 101, 1); /* 内侧圆角效果 */
+
+}
+ 
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/background/grass.png'); /* 指定背景图片 */
+    background-size: cover; /* 确保图片覆盖整个元素 */
+    background-position: center; /* 图片居中显示 */
+    z-index: 1; /* 设置堆叠顺序，背景在底层 */
+
+    border-radius: 10px; /* 添加圆角 */
+
+}
+ 
+#character {
+    position: absolute;
+    margin-top: 5%;
+    right: 2%; /* 水平居中 */
+
+    width: 512px; /* 设置一个固定的宽度 */
+    height: 640px; /* 设置一个固定的高度 */
+    background-image: url('pictures/characters/girl1.png'); /* 指定人物图片 */
+    background-size: cover; /* 确保图片覆盖整个元素 */
+    background-position: center; /* 图片居中显示 */
+    border: 5px solid rgb(255, 162, 192); /* 添加黑色边框 */
+    z-index: 2; /* 设置堆叠顺序，人物在背景之上 */
+
+    border-radius: 10px; /* 添加圆角 */
+
+}

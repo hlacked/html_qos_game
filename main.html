@@ -1,0 +1,185 @@
+
+
+<!-- 说明：main.html是主要结构，game.js是游戏逻辑，styles.css是网页样式，gameData.json是内容存储，phone.css是手机样式，inventory.css是背包样式 -->
+
+<!-- phone.js是手机悬浮功能的实现 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字冒险游戏</title>
+
+    <link rel="stylesheet" href="gamestyles\styles.css">
+
+    <link rel="stylesheet" href="pictures.css">
+
+    <link rel="stylesheet" href="phone1.css">
+
+    <!-- <link rel="stylesheet" href="gamestyles\inventory.css"> -->
+
+    <link rel="stylesheet" href="gamestyles\dialog.css">
+
+    <link rel="stylesheet" href="gamestyles\save.css">
+
+</head>
+<body>
+    <div id="game-screen">
+        <div id="background"></div>
+
+        <!-- <div id="character"></div> -->
+
+        <!-- <div id="text-output"></div>
+        <input type="text" id="text-input" placeholder="输入你的选择...">
+        <button id="submit-button">提交</button> -->
+    </div>
+
+    <div id="character"></div>
+
+
+    <div id="dialog-container" class="hidden">
+        <div id="dialog-text" style="white-space: pre-wrap;">
+            <!-- JS 动态填充大段文字 -->
+        </div>
+        <div id="dialog-options">
+            <!-- JS 动态生成选项按钮 -->
+        </div>
+    </div>
+
+
+    <div id="money">100</div> <!-- 将 #money 移出 #game-screen -->
+
+    <div id="title">章节</div> <!-- 将 #money 移出 #game-screen -->
+
+    <!-- <div id="inventory">
+        <ul>
+            <li>物品1</li>
+            <li>物品2</li>
+            <li>物品3</li>
+        </ul>
+    </div> -->
+    
+
+    <div id="phone">
+        <!-- 主手机界面 -->
+        <div class="phone-screen main-screen active">
+            <!-- <div class="phone-header">手机</div> -->
+            <div class="phone-content">
+                <button class="phone-button">联系人</button>
+                <button class="phone-button">信息</button>
+                <button class="phone-button">设置</button>
+                <div id="save-slots">
+                    <div class="save-slot" data-slot="1">存档槽位1（默认） 
+                        <button class="save-button">保存</button> 
+                        <button class="load-button">加载</button>
+                    </div>
+                    <div class="save-slot" data-slot="2">存档槽位2 
+                        <button class="save-button">保存</button> 
+                        <button class="load-button">加载</button>
+                    </div>
+                    <div class="save-slot" data-slot="3">存档槽位3 
+                        <button class="save-button">保存</button> 
+                        <button class="load-button">加载</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- 子界面容器 -->
+        <div class="phone-screen sub-screen">
+            <!-- 信息子界面 -->
+            <div class="sub-interface" id="info-interface">
+                <div class="sub-header">
+                    <button class="back-button">←</button>
+                    <h2>信息</h2>
+                </div>
+                <div class="sub-content">
+                    <!-- 动态填充聊天内容 -->
+                    
+                    <div id="level">100</div>
+                    <button class="phone-button" onclick="character.addLevel(1)"> 增加等级</button>
+
+                    <div id="percentage">100</div>
+                    <button class="phone-button" onclick="character.addPercentage(10)"> 增加等级</button>
+                    
+
+
+                    <button class="chat-button">返回主界面</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 子界面容器 -->
+        <div class="phone-screen sub-screen">
+            <!-- 信息子界面 -->
+            <div class="sub-interface" id="setting-interface">
+                <div class="sub-header">
+                    <button class="back-button">←</button>
+                    <h2>设置</h2>
+                </div>
+                <div class="sub-content">
+                    <!-- 动态填充设置内容 -->
+                    
+                    <button class="phone-button" onclick="game.addMoney(100)"> 增加金钱</button>
+                    
+                    <button class="chat-button">返回主界面</button>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- 子界面容器 -->
+        <div class="phone-screen sub-screen">
+            <!-- 信息子界面 -->
+            <div class="sub-interface" id="contact-interface">
+                <div class="sub-header">
+                    <button class="back-button">←</button>
+                    <h2>联系人</h2>
+                </div>
+                <div class="sub-content">
+                    <!-- 动态填充设置内容 -->
+                    <button class="chat-button">返回主界面</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+    <!-- 用于引入导出和导入存档功能 -->
+    <div id="save-menu" class="save-menu">
+        <button onclick="game.exportSave()">导出存档</button>
+        <label class="import-btn">
+            导入存档
+            <input 
+                type="file" 
+                id="importInput" 
+                accept=".json" 
+                style="display: none;"
+                onchange="game.handleImport(event)"
+            >
+        </label>
+    </div>
+
+
+
+    <script src="gamewords\gameData.js"></script> <!-- 确保这一行在game.js之前 -->
+
+    <script src="gamecodes\game.js"></script>
+
+    <script src="phone1.js"></script>
+
+    <!-- <script src="gamecodes\inventory.js"></script> -->
+
+    <script src="gamecodes\character.js"></script>
+
+    <script src="gamecodes\save.js"></script>
+
+</body>
+</html>
+
+
+

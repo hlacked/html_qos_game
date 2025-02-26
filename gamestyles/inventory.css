@@ -1,0 +1,61 @@
+/* inventory.css文件 */
+
+/* 背包样式 */
+#inventory {
+    position: fixed;
+    top: 20px; /* 使其靠近顶部 */
+    left: 0px; 
+    transform: translateX(-100px); /* 初始状态只露出一截 */
+    /* 初始状态隐藏在屏幕左侧 */
+    width: 200px; /* 设置背包的宽度 */
+    background-color: #666; /* 设置背景颜色 */
+    color: #fff; /* 设置文字颜色为白色 */
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+    padding: 10px; /* 添加内边距 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+    font-size: 14px; /* 设置字体大小 */
+    z-index: 1000; /* 确保它在其他元素之上 */
+    overflow: auto; /* 如果内容过多，允许滚动 */
+    max-height: calc(100vh - 40px); /* 限制最大高度，避免超出视窗 */
+    transition: transform 0.3s ease; /* 添加过渡效果 */
+
+    /* 用于设置子元素位置 */
+    display: flex;
+    flex-direction: column; /* 让子元素从上到下排列 */
+
+}
+
+/* 背包展开状态 */
+#inventory.open {
+    transform: translateX(0); /* 完全展开 */
+}
+
+/* 背包标题 */
+#inventory::before {
+    content: "背包";
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+    display: block;
+    margin-bottom: 10px;
+    align-self: flex-end; /* 将标题对齐到右侧 */
+
+}
+
+/* 背包物品列表 */
+#inventory ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+    flex: 1; /* 使列表占据剩余空间 */
+
+}
+
+#inventory li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #444;
+    border-radius: 5px;
+}
