@@ -27,6 +27,7 @@ body, html {
         width: 80%;
         left: 5%;
         transform: translate(0%, -50%);
+        position: absolute;
     }
 
     #character {
@@ -53,6 +54,7 @@ body, html {
         width: 60%;
         left: 5%;
         transform: translate(0%, -50%);
+        position: absolute;
     }
 
     #character {
@@ -76,6 +78,7 @@ body, html {
         width: 55%;
         left: 5%;
         transform: translate(0%, -50%);
+        position: absolute;
     }
 
     #character {
@@ -228,7 +231,7 @@ body, html {
 
 /* 对话框容器样式 */
 #dialog-container {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 5%;
     transform: translate(0%, -50%);
