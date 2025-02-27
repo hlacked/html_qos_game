@@ -1,0 +1,404 @@
+
+/* allstyles.css所有用到的样式 */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 30); /* 设置整个网页的背景为黑色 */
+
+    /* background-color: rgb(119, 184, 212); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 确保网页高度覆盖整个视窗高度 */
+}
+
+ 
+#money {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}
+ 
+/* 其他样式... */
+
+
+#save-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}
+
+#title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.7); /* 使用半透明黑色背景 */
+    color: white; /* 设置白色字体 */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3; /* 确保在最高层 */
+}
+
+/* 用于导出和导入存档的样式 */
+
+
+.import-btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.import-btn:hover {
+    background: #45a049;
+}
+
+
+
+/* 存档槽位样式 */
+.save-slot {
+    width: 90%;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.save-slot button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.save-button:hover {
+    background-color: #00cc00;
+}
+
+.save-button.highlighted {
+    background-color: #00cc00;
+    border: 2px solid red;
+}
+
+
+.load-button {
+    background-color: #009900;
+    color: #fff;
+}
+
+.load-button:hover {
+    background-color: #006600;
+}
+
+.load-button.highlighted {
+    background-color: #006600;
+    border: 2px solid red;
+}
+
+/* 文本和对话框样式 */
+
+/* 对话框容器 */
+#dialog-container {
+    position: fixed;
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 55%;
+    max-width: 1600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 大段文字样式 */
+#dialog-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 选项按钮容器 */
+#dialog-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 单个选项按钮样式 */
+.option-button {
+    background-color: #6291c4;
+
+    /* background-color: #007BFF; */
+
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+    border: 2px solid red;
+
+}
+
+.option-button.highlighted {
+    background-color: #0056b3;
+    border: 2px solid red;
+}
+
+/* 用于隐藏容器 */
+#dialog-container.hidden {
+    display: none;
+}
+
+/* 用于定义背景图片和人物图片的样式 */
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 垂直居中 */
+}
+
+#game-screen {
+    position: relative;
+    /* width: 400px;
+    height: 300px; */
+
+    width: 90%;
+    height: 90%;
+
+
+    background-color: white; /* 设置黑色背景 */
+    /* border: 10px solid rgb(167, 233, 244); */
+    border: 10px solid rgb(101, 101, 101);
+
+    border-radius: 10px; /* 添加圆角 */
+
+    /* 定位设置 */
+    margin: 0 auto; /* 水平居中 */
+    /* margin-right: 2%; */
+    margin-top: 2%;
+
+
+    box-shadow: inset 0 0 0 10px rgba(101, 101, 101, 1); /* 内侧圆角效果 */
+
+}
+ 
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/background/grass.png'); /* 指定背景图片 */
+    background-size: cover; /* 确保图片覆盖整个元素 */
+    background-position: center; /* 图片居中显示 */
+    z-index: 1; /* 设置堆叠顺序，背景在底层 */
+
+    border-radius: 10px; /* 添加圆角 */
+
+}
+ 
+#character {
+    position: absolute;
+    margin-top: 5%;
+    right: 2%; /* 水平居中 */
+
+    width: 512px; /* 设置一个固定的宽度 */
+    height: 640px; /* 设置一个固定的高度 */
+    background-image: url('pictures/characters/girl1.png'); /* 指定人物图片 */
+    background-size: cover; /* 确保图片覆盖整个元素 */
+    background-position: center; /* 图片居中显示 */
+    border: 5px solid rgb(255, 162, 192); /* 添加黑色边框 */
+    z-index: 2; /* 设置堆叠顺序，人物在背景之上 */
+
+    border-radius: 10px; /* 添加圆角 */
+
+}
+
+/* 手机部分样式 */
+
+
+/* 手机整体样式 */
+#phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(300px); /* 初始状态只露出一截 */
+}
+
+/* 手机顶部标题 */
+#phone::before {
+    content: "手机";
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+/* 手机功能文本的样式 */
+#phone span {
+    font-size: 14px;
+    color: lightgray;
+}
+
+/* 手机按钮样式 */
+.phone-button {
+    width: 80px;
+    height: 30px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.phone-button:hover {
+    background-color: #00cc00;
+}
+
+.phone-button:active {
+    background-color: #009900;
+}
+
+.phone-button.highlighted {
+    background-color: #00cc00;
+    border: 2px solid red;
+}
+
+
+
+
+/* 手机展开状态 */
+#phone.open {
+    transform: translateY(0); /* 完全展开 */
+}
+
+
+
+ /* 新增界面层级样式 */
+.phone-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    display: none;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.phone-screen.active {
+    display: flex;
+}
+
+.sub-screen {
+    background: #444;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sub-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.chat-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.back-button.highlighted {
+    background: none;
+    /* border: none; */
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid red;
+
+}
+
+.chat-button.highlighted {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 2px solid red;
+}

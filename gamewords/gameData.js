@@ -108,6 +108,10 @@ const gameData = {
 
             options: [
                 {
+                    text: '回去找商人',
+                    nextScene: 'merchant'
+                },
+                {
                     text: '回过神来',
                     nextScene: 'chapterQfemboy2'
                 },
@@ -152,6 +156,10 @@ const gameData = {
                 {
                     text: '检查记忆',
                     nextScene: 'chapterQfemale2'
+                },
+                {
+                    text: '回去找商人',
+                    nextScene: 'merchant'
                 },
             ]
         },

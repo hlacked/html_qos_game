@@ -1,0 +1,417 @@
+/* 通用样式 */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    font-family: Arial, sans-serif;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start;
+    }
+
+    #game-screen {
+        width: 95%;
+        height: 80%;
+        margin-top: 5%;
+    }
+
+    #dialog-container {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #character {
+        width: 256px;
+        height: 320px;
+        margin-top: 10%;
+    }
+
+    #phone {
+        width: 250px;
+        height: 350px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #game-screen {
+        width: 85%;
+        height: 85%;
+    }
+
+    #dialog-container {
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #character {
+        width: 384px;
+        height: 480px;
+    }
+
+    #phone {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #game-screen {
+        width: 90%;
+        height: 90%;
+    }
+
+    #dialog-container {
+        width: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #character {
+        width: 512px;
+        height: 640px;
+    }
+
+    #phone {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+/* 游戏屏幕样式 */
+#game-screen {
+    position: relative;
+    background-color: white;
+    border: 10px solid rgb(101, 101, 101);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 2%;
+    box-shadow: inset 0 0 0 10px rgba(101, 101, 101, 1);
+}
+
+/* 背景样式 */
+#background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('pictures/background/grass.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* 人物样式 */
+#character {
+    position: absolute;
+    right: 2%;
+    background-image: url('pictures/characters/girl1.png');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(255, 162, 192);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+/* 金钱显示样式 */
+#money {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+/* 保存菜单样式 */
+#save-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+/* 标题样式 */
+#title {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+/* 导入按钮样式 */
+.import-btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.import-btn:hover {
+    background: #45a049;
+}
+
+/* 存档槽位样式 */
+.save-slot {
+    width: 90%;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.save-slot button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #00ff00;
+    color: #000;
+}
+
+.save-button:hover {
+    background-color: #00cc00;
+}
+
+.save-button.highlighted {
+    background-color: #00cc00;
+    border: 2px solid red;
+}
+
+.load-button {
+    background-color: #009900;
+    color: #fff;
+}
+
+.load-button:hover {
+    background-color: #006600;
+}
+
+.load-button.highlighted {
+    background-color: #006600;
+    border: 2px solid red;
+}
+
+/* 对话框容器样式 */
+#dialog-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 55%;
+    max-width: 1600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+/* 对话框文本样式 */
+#dialog-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* 选项按钮容器样式 */
+#dialog-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 选项按钮样式 */
+.option-button {
+    background-color: #6291c4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+    border: 2px solid red;
+}
+
+.option-button.highlighted {
+    background-color: #0056b3;
+    border: 2px solid red;
+}
+
+/* 隐藏容器样式 */
+#dialog-container.hidden {
+    display: none;
+}
+
+/* 手机样式 */
+#phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(300px);
+}
+
+#phone::before {
+    content: "手机";
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+#phone span {
+    font-size: 14px;
+    color: lightgray;
+}
+
+.phone-button {
+    width: 80px;
+    height: 30px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.phone-button:hover {
+    background-color: #00cc00;
+}
+
+.phone-button:active {
+    background-color: #009900;
+}
+
+.phone-button.highlighted {
+    background-color: #00cc00;
+    border: 2px solid red;
+}
+
+#phone.open {
+    transform: translateY(0);
+}
+
+.phone-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    display: none;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.phone-screen.active {
+    display: flex;
+}
+
+.sub-screen {
+    background: #444;
+}
+
+.sub-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sub-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.chat-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.back-button.highlighted {
+    background: none;
+    color: #0f0;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 2px solid red;
+}
+
+.chat-button.highlighted {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #555;
+    color: #fff;
+    border: 2px solid red;
+}
