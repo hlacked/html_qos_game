@@ -25,7 +25,7 @@ body, html {
 
     #dialog-container {
         width: 80%;
-        left: 50%;
+        left: 40%;
         transform: translate(-150%, -50%);
     }
 
@@ -51,7 +51,7 @@ body, html {
 
     #dialog-container {
         width: 60%;
-        left: 50%;
+        left: 40%;
         transform: translate(-150%, -50%);
     }
 
@@ -74,7 +74,7 @@ body, html {
 
     #dialog-container {
         width: 55%;
-        left: 50%;
+        left: 40%;
         transform: translate(-150%, -50%);
     }
 
@@ -230,7 +230,7 @@ body, html {
 #dialog-container {
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-150%, -50%);
     height: 70%;
     width: 55%;
