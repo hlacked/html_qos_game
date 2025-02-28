@@ -159,7 +159,7 @@ const gameData = {
             text: `因为这巨汉的手掌一看就可以轻松提起一个篮球，结果居然还不能把眼前的这个女生的胸部给完全覆盖住！仅仅是只能盖住了不到三分之二的位置……剩下的三分之一的部分，正白花花地暴露在我的面前！
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -177,7 +177,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -196,7 +196,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -217,7 +217,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -236,7 +236,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -255,7 +255,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/girl1.png',
 
             options: [
                 {
@@ -274,7 +274,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/femboy1.png',
 
             options: [
                 {
@@ -293,7 +293,7 @@ const gameData = {
 
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/femboy1.png',
 
             options: [
                 {
@@ -353,7 +353,7 @@ const gameData = {
             
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/femboy1.png',
 
             options: [
                 {
@@ -395,7 +395,7 @@ const gameData = {
             
             `,
             background_path: 'pictures/background/street1.png',
-            character_path: 'pictures/characters/blackmale1.png',
+            character_path: 'pictures/characters/femboy1.png',
 
             options: [
                 {
