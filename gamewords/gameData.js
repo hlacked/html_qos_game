@@ -132,11 +132,289 @@ const gameData = {
 
             options: [
                 {
-                    text: '检查记忆',
+                    text: '欸欸欸',
+                    nextScene: 'chapterQfemboy3'
+                },
+            ]
+        },
+
+
+        chapterQfemboy3: {
+            text: `这个黑色巨汉显然是个霸道又凶残的人，那个女生的身体被那巨汉的手掌完全包裹着，几乎无法动弹……但是，不得不说，这个女生和面前的巨汉一样让人感到震撼！
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '眼睛从黑人身上移开',
+                    nextScene: 'chapterQfemboy4'
+                },
+            ]
+        },
+
+
+        chapterQfemboy4: {
+            text: `因为这巨汉的手掌一看就可以轻松提起一个篮球，结果居然还不能把眼前的这个女生的胸部给完全覆盖住！仅仅是只能盖住了不到三分之二的位置……剩下的三分之一的部分，正白花花地暴露在我的面前！
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '看向乳房',
+                    nextScene: 'chapterQfemboy5'
+                },
+            ]
+        },
+
+
+        chapterQfemboy5: {
+            text: `
+            
+            那是一对挺拔饱满的乳房，诱人而又傲人……配合上女生那皮肤白皙光滑，仿佛凝脂一般，整个肉体浑然天成，浑身都在散发着令任何男性都无法抵挡的诱惑。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy6'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy6: {
+            text: `
+            
+            不仅如此，眼前女生这一身暴露而性感的水手服……居然还是暴露出南半球、十分令人口干舌燥的款式！而她的裙子也短到几乎能看到她的臀部，露出了大片美丽的臀肉，每一寸肌肤都充满了诱人的曲线和柔软的质感。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy7'
+                },
+            ]
+        },
+
+
+
+
+
+        chapterQfemboy7: {
+            text: `
+            
+            她的腿上则是穿着一对白色丝袜，光滑而有光泽，仿佛是为了更加突显她的傲人曲线而存在……与此同时，那丝袜更是勒住了她丰腴的大腿肉，形成了一道令人心跳加速的肉痕，仅仅是看一眼，就能引起男性无尽的遐想。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy8'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy8: {
+            text: `
+            
+            此时，这个女生正微微低着头，长发轻轻垂落在肩上，她的眼神湿润而迷离，仿佛有着什么深深的秘密。她的唇红齿白，微微张开，似乎在诱惑着人们的欲望。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy9'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy9: {
+            text: `
+            
+            仅仅是看了这么一下，我依旧是不由自主地被她的美丽所吸引，心中升起一股无法抑制的欲望……然而，这个女生叫萌萌，是我现在的未婚妻。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy10'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy10: {
+            text: `
+            
+            我心中涌起一股矛盾的情感，既欣喜于能够拥有如此美丽的女人，又不禁感到遗憾和无奈。毕竟，我们才刚刚从恋人升级为未婚夫妻不到一个月。我原本以为我们有足够的时间来慢慢了解彼此，但现在却发现自己面临着一个巨大的困境。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy11'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy11: {
+            text: `
+            
+            作为一个上辈子都没有能够拥有女朋友的老处男，这一次的转生让我产生了对自己新人生的期望！我渴望能够在这个世界上找到属于自己的幸福，不再孤单一人度过余生……于是，我拼了老命也要追求一个漂亮的女朋友，以证明自己的价值和魅力。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy12'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy12: {
+            text: `
+            
+            然而，就在我们两情相悦，正准备迎接与未婚妻的第一次时，我却得知了一个令我震惊的事实！
+            原来，在这个世界里，为了这个区域的稳定，我……必须将未婚妻的第一次送给黑爹！那个强壮到离谱的黑人！
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy13'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy13: {
+            text: `
+            
+            就仅仅是因为，他是我转生后所在地区的英雄，负责保护我们免受各种威胁和危险的侵害……这个区域的人民都对他充满敬畏和崇拜，认为他是他们的守护神。但是，为了维持这个区域的稳定，他竟然要求我献上我的未婚妻的第一次。
+
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy14'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy14: {
+            text: `
+            
+            　　什么鬼！哪里来的中世纪初夜权啊？
+            　　这到底是英雄还是中世纪领主啊？
+            　　为什么我要牺牲我心爱的未婚妻，将她的第一次交给一个陌生的男人？
+            
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy15'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy15: {
+            text: `
+            
+            　　……\n
+            　　结果没想到的是，在这个转生的异世界里面，居然还真的有初夜权这个东西！\n
+            　　之前，因为不知道这件事，就和对方起了争执，结果害得自己转生后的父亲被捉到地牢里面，关到现在还没出来……母亲也被一车子的黑衣人给塞进车辆里面后带走了后，就音讯全无。
+            
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
+                    nextScene: 'chapterQfemboy16'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy16: {
+            text: `
+            
+            　　这些不幸的事件让我陷入了无尽的困境，而且，我，作为一个毫无特权的平民，没有任何经济来源后，竟然连最简单的生活费也成了问题！
+            　　我感觉，自己应该是转生者中最不幸的一个了……虽然享受了转生后一些金手指的好处，但大部分都是对体力属性的提升，这在日常生活中并没有太大的作用。
+            　　体力的提高，带来的好消息是我连续六年成为了马拉松冠军保持者，但坏消息是与那些职业选手相比，我仍然有相当大的差距……尽管在父母出事之后，我每天都在努力寻找工作，希望能够改变我的困境。
+            
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/blackmale1.png',
+
+            options: [
+                {
+                    text: '继续',
                     nextScene: 'chapterQfemboy1'
                 },
             ]
         },
+
+
+
+
+
+
+
+
+
+
+
 
 
 
