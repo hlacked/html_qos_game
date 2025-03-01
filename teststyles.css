@@ -31,7 +31,7 @@ body, html {
     }
 
     #dialog-text {
-        font-size: 0.2em;
+        font-size: 0.4em;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -64,7 +64,7 @@ body, html {
     }
 
     #dialog-text {
-        font-size: 0.2em;
+        font-size: 0.8em;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -94,7 +94,7 @@ body, html {
     }
 
     #dialog-text {
-        font-size: 0.2em;
+        font-size: 1.0em;
         line-height: 1.5;
         margin-bottom: 20px;
     }
@@ -267,7 +267,7 @@ body, html {
 
 /* 对话框文本样式 */
 #dialog-text {
-    font-size: 0.2em;
+    font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 20px;
 }
