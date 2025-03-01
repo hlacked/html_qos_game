@@ -400,6 +400,27 @@ const gameData = {
             options: [
                 {
                     text: '继续',
+                    nextScene: 'chapterQfemboy17'
+                },
+            ]
+        },
+
+
+
+        chapterQfemboy17: {
+            text: `
+            
+        　　然而，由于我没有任何特殊技能或背景，加上还是一个学生，要找到一份合适的工作变得异常困难……我四处奔波，递交简历，但总是被冷漠地拒绝。
+        　　经过一连两个月的“努力”，我很不幸地成为了负资产者……每天面对着堆积如山的债务，我只能感到无比沮丧和无奈，而且，无论我如何努力工作，都无法摆脱债务的困扰。
+        　　绝望之下，我只能接受未婚妻萌萌的提议，乖乖去找黑爹认错。
+            
+            `,
+            background_path: 'pictures/background/street1.png',
+            character_path: 'pictures/characters/femboy1.png',
+
+            options: [
+                {
+                    text: '继续',
                     nextScene: 'chapterQfemboy1'
                 },
             ]
